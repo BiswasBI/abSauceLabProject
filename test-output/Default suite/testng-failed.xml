@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="arpitabiswas.Tests.SubmitOrderTest">
+      <class name="arpitabiswas.Tests.CheapoairLogoTest">
         <methods>
+          <include name="CheapoairLogoTesting" invocation-numbers="0 1"/>
           <include name="launchApplication"/>
-          <include name="OrderHistoryTest"/>
-          <include name="submitOrder"/>
         </methods>
-      </class> <!-- arpitabiswas.Tests.SubmitOrderTest -->
+      </class> <!-- arpitabiswas.Tests.CheapoairLogoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

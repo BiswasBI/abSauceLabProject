@@ -98,7 +98,7 @@ public class BaseTest {
 	
 	
 	
-	@BeforeMethod(alwaysRun=true)
+	@BeforeMethod(alwaysRun=true) //alwaysRun-true because when run testcases via groups in testng.xml it skipped testing this before method
 	public LandingPage launchApplication() throws IOException
 	{
 		

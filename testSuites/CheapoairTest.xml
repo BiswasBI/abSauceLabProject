@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel='tests' name="Suite">
-  <test thread-count="5" name="Submit Order Test">
+<suite  name="Suite">
+
+<groups>
+<run>
+	<include name="LogoTest"/>
+</run>
+</groups>
+
+  <test thread-count="5" name="Logo Test">
     <classes>
-      <class name="arpitabiswas.Tests.SubmitOrderTest"/>
+      <class name="arpitabiswas.Tests.CheapoairLogoTest"/>
     </classes>
   </test> 
   

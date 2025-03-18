@@ -33,7 +33,7 @@ public class SubmitOrderTest extends BaseTest{
 		// TODO Auto-generated method stub
 		//String productName = "ZARA COAT 3";
 	//	LandingPage landingPage=launchApplication();
-		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
+	/*	ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		//List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);		
 		CartPage cartpage=productCatalogue.goToCartPage();
@@ -43,7 +43,7 @@ public class SubmitOrderTest extends BaseTest{
 		checkoutpage.selectCountry("India");
 		ConfirmationPage confirmationPage = checkoutpage.submitOrder();
 		String confirmMessage =confirmationPage.getConfirmationMessage();
-		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));*/
 	
 	}
 	
@@ -51,9 +51,9 @@ public class SubmitOrderTest extends BaseTest{
 	public void OrderHistoryTest()
 	{
 		
-		ProductCatalogue productCatalogue = landingPage.loginApplication("anshika@gmail.com", "Iamking@000");
+		/*ProductCatalogue productCatalogue = landingPage.loginApplication("anshika@gmail.com", "Iamking@000");
 		OrderPage ordersPage = productCatalogue.goToOrdersPage();		
-		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
+		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));*/
 	}
 
 	@DataProvider

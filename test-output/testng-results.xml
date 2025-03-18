@@ -1,58 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T15:29:54 IST" name="Suite" finished-at="2025-03-17T15:30:11 IST" duration-ms="16795">
+  <suite started-at="2025-03-18T14:35:12 IST" name="Default suite" finished-at="2025-03-18T14:35:18 IST" duration-ms="6191">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidation.errorValidationTest()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" name="errorValidationTest" class="arpitabiswas.Tests.ErrorValidation"/>
-      </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" name="submitOrder" class="arpitabiswas.Tests.SubmitOrderTest"/>
-      </group> <!-- Purchase -->
+      <group name="LogoTest">
+        <method signature="CheapoairLogoTest.CheapoairLogoTesting(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.CheapoairLogoTest@75437611]" name="CheapoairLogoTesting" class="arpitabiswas.Tests.CheapoairLogoTest"/>
+      </group> <!-- LogoTest -->
     </groups>
-    <test started-at="2025-03-17T15:29:54 IST" name="Error Validation Test" finished-at="2025-03-17T15:30:03 IST" duration-ms="8833">
-      <class name="arpitabiswas.Tests.ErrorValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:29:54 IST" name="launchApplication" finished-at="2025-03-17T15:29:58 IST" duration-ms="3371" status="PASS">
+    <test started-at="2025-03-18T14:35:12 IST" name="Default test" finished-at="2025-03-18T14:35:18 IST" duration-ms="6191">
+      <class name="arpitabiswas.Tests.CheapoairLogoTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.CheapoairLogoTest@75437611]" started-at="2025-03-18T14:35:12 IST" name="launchApplication" finished-at="2025-03-18T14:35:15 IST" duration-ms="2975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:29:58 IST" name="ProductErrorValidation" finished-at="2025-03-17T15:30:00 IST" duration-ms="2600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:30:00 IST" name="launchApplication" finished-at="2025-03-17T15:30:02 IST" duration-ms="1728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="errorValidationTest()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:30:02 IST" name="errorValidationTest" finished-at="2025-03-17T15:30:03 IST" duration-ms="1094" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorValidationTest -->
-      </class> <!-- arpitabiswas.Tests.ErrorValidation -->
-    </test> <!-- Error Validation Test -->
-    <test started-at="2025-03-17T15:29:54 IST" name="Submit Order Test" finished-at="2025-03-17T15:30:11 IST" duration-ms="16795">
-      <class name="arpitabiswas.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:29:55 IST" name="launchApplication" finished-at="2025-03-17T15:29:58 IST" duration-ms="3110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:29:58 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-17T15:30:01 IST" duration-ms="3129" status="PASS">
+        <test-method signature="CheapoairLogoTesting(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.CheapoairLogoTest@75437611]" started-at="2025-03-18T14:35:15 IST" name="CheapoairLogoTesting" data-provider="getData" finished-at="2025-03-18T14:35:16 IST" duration-ms="359" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}]]>
+                <![CDATA[{password=arpita@1, product=ZARA COAT 3, email=test1803_01@yopmail.com}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: The result of the xpath expression "//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]" is: [object Text]. It should be an element.
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8665612142ea8053f7c5d3d67ed0829, findElement {using=xpath, value=//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\activ\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60939/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8665612142ea8053f7c5d3d67ed0829]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]" is: [object Text]. It should be an element.
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8665612142ea8053f7c5d3d67ed0829, findElement {using=xpath, value=//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\activ\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60939/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8665612142ea8053f7c5d3d67ed0829
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at PageObjects.LandingPage.loginApplication(LandingPage.java:46)
+at arpitabiswas.Tests.CheapoairLogoTest.CheapoairLogoTesting(CheapoairLogoTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:01 IST" name="launchApplication" finished-at="2025-03-17T15:30:04 IST" duration-ms="2798" status="PASS">
+        </test-method> <!-- CheapoairLogoTesting -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.CheapoairLogoTest@75437611]" started-at="2025-03-18T14:35:16 IST" name="launchApplication" finished-at="2025-03-18T14:35:18 IST" duration-ms="2265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:04 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-17T15:30:07 IST" duration-ms="3056" status="PASS">
+        <test-method signature="CheapoairLogoTesting(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.CheapoairLogoTest@75437611]" started-at="2025-03-18T14:35:18 IST" name="CheapoairLogoTesting" data-provider="getData" finished-at="2025-03-18T14:35:18 IST" duration-ms="341" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -60,18 +111,84 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: The result of the xpath expression "//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]" is: [object Text]. It should be an element.
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdfa41d31ec60b275f9074706cc30846, findElement {using=xpath, value=//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\activ\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60983/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdfa41d31ec60b275f9074706cc30846]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]" is: [object Text]. It should be an element.
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdfa41d31ec60b275f9074706cc30846, findElement {using=xpath, value=//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\activ\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60983/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdfa41d31ec60b275f9074706cc30846
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at PageObjects.LandingPage.loginApplication(LandingPage.java:46)
+at arpitabiswas.Tests.CheapoairLogoTest.CheapoairLogoTesting(CheapoairLogoTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:07 IST" name="launchApplication" finished-at="2025-03-17T15:30:10 IST" duration-ms="3703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:10 IST" name="OrderHistoryTest" finished-at="2025-03-17T15:30:11 IST" depends-on-methods="arpitabiswas.Tests.SubmitOrderTest.submitOrder" duration-ms="705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-      </class> <!-- arpitabiswas.Tests.SubmitOrderTest -->
-    </test> <!-- Submit Order Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- CheapoairLogoTesting -->
+      </class> <!-- arpitabiswas.Tests.CheapoairLogoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
