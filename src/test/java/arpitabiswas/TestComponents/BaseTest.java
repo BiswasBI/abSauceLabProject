@@ -103,8 +103,9 @@ public class BaseTest {
 	{
 		
 		driver = initializeDriver();
+		driver.get("https://www.saucedemo.com/");
 		landingPage = new LandingPage(driver);
-		landingPage.goTo();
+		//landingPage.goTo();
 		return landingPage;
 	
 		

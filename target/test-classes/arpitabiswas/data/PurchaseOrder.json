@@ -1,14 +1,14 @@
 [
 {
-  "email" : "test1803_01@yopmail.com",
-  "password": "arpita@1",
+  "email" : "standard_user",
+  "password": "secret_sauce",
   "product" : "ZARA COAT 3"
     
 },
 
 {
-    "email" : "shetty@gmail.com",
-    "password": "Iamking@000",
+    "email" : "visual_user",
+    "password": "secret_sauce",
     "product" : "ADIDAS ORIGINAL"
     
 }

@@ -21,39 +21,35 @@ public class LandingPage extends AbstractComponent1{
 	
 	//WebElement usereEmail = driver.findElement(By.id("userEmail"));
 	
-	@FindBy(xpath="//*[@id='app']/header/div/div[1]/div[2]/button/span[3]/text()[1]")
-	WebElement signUp;
 	
-	@FindBy(name="email")
+	@FindBy(id="user-name")
 	WebElement userEmail;
 	
-	@FindBy(name="password")
+	@FindBy(id="password")
 	WebElement userPassword;
 	
-	@FindBy(xpath="//*[@id=\"modal\"]/div/div/div/div/div/div[2]/div[2]/div[3]/div[5]/button")
+	@FindBy(id="login-button")
 	WebElement submit;
-	
-	@FindBy(className="close-icon-popup")
-	WebElement closeButton;
 	
 	@FindBy(css="[class*='flyInOut']")
 	WebElement errorMessage;
 	
 	
 	
-	public void loginApplication(String email, String password)
+	public ProductCatalogue loginApplication(String email, String password)
 	{
-		signUp.click();
+		
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		submit.click();
-		closeButton.click();
+		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
+		return productCatalogue; 
 	}
 	
 	
 	public void goTo()
 	{
-		driver.get("https://www.cheapoair.com/");	
+		driver.get("https://www.saucedemo.com/");	
 	}
 	
 

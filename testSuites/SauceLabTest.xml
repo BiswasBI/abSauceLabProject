@@ -4,13 +4,13 @@
 
 <groups>
 <run>
-	<include name="LogoTest"/>
+	<include name="saucelabtest"/>
 </run>
 </groups>
 
-  <test thread-count="5" name="Logo Test">
+  <test thread-count="5" name="saucelabtest">
     <classes>
-      <class name="arpitabiswas.Tests.CheapoairLogoTest"/>
+      <class name="arpitabiswas.Tests.SauceLabTest"/>
     </classes>
   </test> 
   
