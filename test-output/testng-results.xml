@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-17T15:29:54 IST" name="Suite" finished-at="2025-03-17T15:30:11 IST" duration-ms="16795">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidation.errorValidationTest()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" name="errorValidationTest" class="arpitabiswas.Tests.ErrorValidation"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" name="submitOrder" class="arpitabiswas.Tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-03-17T15:29:54 IST" name="Error Validation Test" finished-at="2025-03-17T15:30:03 IST" duration-ms="8833">
+      <class name="arpitabiswas.Tests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:29:54 IST" name="launchApplication" finished-at="2025-03-17T15:29:58 IST" duration-ms="3371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:29:58 IST" name="ProductErrorValidation" finished-at="2025-03-17T15:30:00 IST" duration-ms="2600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:30:00 IST" name="launchApplication" finished-at="2025-03-17T15:30:02 IST" duration-ms="1728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="errorValidationTest()[pri:0, instance:arpitabiswas.Tests.ErrorValidation@4722ef0c]" started-at="2025-03-17T15:30:02 IST" name="errorValidationTest" finished-at="2025-03-17T15:30:03 IST" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidationTest -->
+      </class> <!-- arpitabiswas.Tests.ErrorValidation -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2025-03-17T15:29:54 IST" name="Submit Order Test" finished-at="2025-03-17T15:30:11 IST" duration-ms="16795">
+      <class name="arpitabiswas.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:29:55 IST" name="launchApplication" finished-at="2025-03-17T15:29:58 IST" duration-ms="3110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:29:58 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-17T15:30:01 IST" duration-ms="3129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:01 IST" name="launchApplication" finished-at="2025-03-17T15:30:04 IST" duration-ms="2798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:04 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-17T15:30:07 IST" duration-ms="3056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:07 IST" name="launchApplication" finished-at="2025-03-17T15:30:10 IST" duration-ms="3703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:arpitabiswas.Tests.SubmitOrderTest@4be29ed9]" started-at="2025-03-17T15:30:10 IST" name="OrderHistoryTest" finished-at="2025-03-17T15:30:11 IST" depends-on-methods="arpitabiswas.Tests.SubmitOrderTest.submitOrder" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- arpitabiswas.Tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
